@@ -33,7 +33,6 @@ datos = clean(datos, "replaceval",
 
 datos = clean(datos, method="dropmissing")
 
-
 def codify_bind(original_dataframe: pd.DataFrame, variables: list) -> pd.DataFrame:
 
     for variable in variables:
@@ -49,8 +48,6 @@ def codify_bind(original_dataframe: pd.DataFrame, variables: list) -> pd.DataFra
     return original_dataframe
 
 datos = codify_bind(datos, ["class"])
-
-
 
 # Escalamiento de los datos
 from sklearn.preprocessing import MinMaxScaler
